@@ -16,5 +16,13 @@
 				<include>repo/**</include>
 			</includes>
 		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/src/main/scripts</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>*.bat</include>
+				<include>*.sh</include>
+			</includes>
+		</fileSet>
 	</fileSets>
 </assembly>
