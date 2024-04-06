@@ -6,21 +6,21 @@ import java.nio.file.{Files, Paths, Path}
 import java.nio.charset.StandardCharsets
 
 object ScalametaExtractor {
-  private def extractAndSave(tree: Tree, sourcePath: Path): Unit = {
+  private def extractAndSave(tree: Tree, sourcePath: Path, code: String): Unit = {
     val sourceFileName = sourcePath.getFileName.toString.replaceFirst("[.][^.]+$", "")
     val parentPath = Option(sourcePath.getParent).getOrElse(Paths.get("."))
     
     tree.collect {
       case obj: Defn.Object if obj.name.value != sourceFileName =>
+        val content = code.substring(obj.pos.start, obj.pos.end)
         val outputPath = parentPath.resolve(obj.name.value + ".java")
-        val content = "\n" * obj.pos.startLine + obj.syntax
         println("Extracting object: " + outputPath)
-        Files.write(outputPath, content.getBytes)
+        Files.writeString(outputPath, "\n" * obj.pos.startLine + content)
       case cls: Defn.Class if cls.name.value != sourceFileName =>
+        val content = code.substring(cls.pos.start, cls.pos.end)
         val outputPath = parentPath.resolve(cls.name.value + ".java")
-        val content = "\n" * cls.pos.startLine + cls.syntax
         println("Extracting class: " + outputPath)
-        Files.write(outputPath, content.getBytes)
+        Files.writeString(outputPath, "\n" * cls.pos.startLine + content)
     }
   }
 
@@ -28,7 +28,7 @@ object ScalametaExtractor {
     val code = Files.readString(sourcePath, StandardCharsets.UTF_8)
     code.parse[Source] match {
       case Parsed.Success(tree) =>
-        extractAndSave(tree, sourcePath)
+        extractAndSave(tree, sourcePath, code)
       case Parsed.Error(pos, message, _) =>
         println(s"Parsing failed at ${sourcePath.getFileName}: line ${pos.startLine}, column ${pos.startColumn}: $message")
     }
