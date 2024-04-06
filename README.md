@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/nbauma109/source-extractor.svg)](https://jitpack.io/#nbauma109/source-extractor)
 [![](https://jitci.com/gh/nbauma109/source-extractor/svg)](https://jitci.com/gh/nbauma109/source-extractor)
-[![CodeQL](https://github.com/nbauma109/source-extractor/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/nbauma109/source-extractor/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/nbauma109/source-extractor/actions/workflows/codeql.yml/badge.svg)](https://github.com/nbauma109/source-extractor/actions/workflows/codeql.yml)
 [![Maven Release](https://github.com/nbauma109/source-extractor/actions/workflows/maven.yml/badge.svg)](https://github.com/nbauma109/source-extractor/actions/workflows/maven.yml)
 [![Github Release](https://github.com/nbauma109/source-extractor/actions/workflows/release.yml/badge.svg)](https://github.com/nbauma109/source-extractor/actions/workflows/release.yml)
 
