@@ -9,7 +9,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<scala.version>2.12.19</scala.version>
+		<scala.version>2.13.13</scala.version>
 		<scalameta.version>4.9.3</scalameta.version>
 		<project.scm.id>github</project.scm.id>
 	</properties>
