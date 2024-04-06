@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.nbauma109</groupId>
 	<artifactId>source-extractor</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
@@ -15,7 +15,7 @@
 		<developerConnection>
 			scm:git:ssh://git@github.com/nbauma109/source-extractor.git</developerConnection>
 		<url>https://github.com/nbauma109/source-extractor</url>
-		<tag>0.0.3</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<build>
 		<plugins>
