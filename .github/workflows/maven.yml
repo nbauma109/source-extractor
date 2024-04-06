@@ -20,4 +20,4 @@ jobs:
       env:
         JAVA_HOME: /usr/lib/jvm/java-17-openjdk/
       with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY_SOURCE_EXTRACTOR }}
