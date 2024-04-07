@@ -1,5 +1,5 @@
 jdk:
-  - semjdk17
+  - temjdk17
 before_install:
   - echo "Before Install"
   - bash ensure-java-17-tem install
