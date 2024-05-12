@@ -16,3 +16,5 @@ Downloads from Jitpack :
 
 # source-extractor
 Extracts scala and java declarations into their own file. [![image](https://user-images.githubusercontent.com/9403560/156565769-51264b92-4850-46c1-ad33-a4211a4c89ec.png)](https://jitpack.io/com/github/nbauma109/source-extractor/master-SNAPSHOT/source-extractor-master-SNAPSHOT.zip)
+
+Primary use for [pycobertura](https://github.com/aconrad/pycobertura/issues/182)
