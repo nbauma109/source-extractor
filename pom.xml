@@ -8,7 +8,7 @@
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 		<scala.version>2.12.19</scala.version>
-		<scalameta.version>4.14.6</scalameta.version>
+		<scalameta.version>4.14.7</scalameta.version>
 	</properties>
 	<scm>
 		<connection>scm:git:https://github.com/nbauma109/source-extractor.git</connection>
